@@ -5,6 +5,10 @@
 
 COMMON_PATH := device/motorola/sm6125-common
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += boot dtbo system vendor vbmeta
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -24,10 +28,18 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 TARGET_BOOTLOADER_BOARD_NAME := trinket
 TARGET_NO_BOOTLOADER := true
 
+# Partitions
+BOARD_FLASH_BLOCK_SIZE := 262144
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := trinket
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
+
+# Treble
+TARGET_COPY_OUT_VENDOR := vendor
 
 # Include the proprietary files
 include vendor/motorola/sm6125-common/BoardConfigVendor.mk
