@@ -54,5 +54,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2022-08-01
 
+# Verified boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 # Include the proprietary files
 include vendor/motorola/sm6125-common/BoardConfigVendor.mk
