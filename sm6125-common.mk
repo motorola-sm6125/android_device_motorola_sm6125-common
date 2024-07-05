@@ -57,6 +57,12 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio-impl
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    libcamera2ndk_vendor
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
