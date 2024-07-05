@@ -70,6 +70,15 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.composer@2.4-service \
+    hwcomposer.qcom \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.memtrack-service
+
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-hotword.xml

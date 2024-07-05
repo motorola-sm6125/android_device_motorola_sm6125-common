@@ -63,6 +63,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/motorola/sm6125
 TARGET_KERNEL_CONFIG := vendor/trinket-perf_defconfig vendor/ext_config/moto-trinket.config
 
+# Media
+TARGET_USES_ION := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
