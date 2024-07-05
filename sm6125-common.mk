@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     libcamera2ndk_vendor
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
