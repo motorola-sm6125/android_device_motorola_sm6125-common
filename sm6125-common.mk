@@ -59,7 +59,9 @@ PRODUCT_PACKAGES += \
 
 # Boot
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-service
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -207,6 +209,18 @@ PRODUCT_BOOT_JARS += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.basic
+
+# Update engine
+PRODUCT_HOST_PACKAGES += \
+    brillo_update_payload
+
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # Vibrator
 PRODUCT_PACKAGES += \
