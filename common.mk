@@ -25,6 +25,9 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
 # Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-service:32
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml \
     frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
