@@ -126,6 +126,9 @@ PRODUCT_PACKAGES += \
     vendor_fsg_mountpoint
 
 # Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.multihal
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.ambient_temperature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.ambient_temperature.xml \
