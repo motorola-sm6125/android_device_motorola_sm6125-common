@@ -108,6 +108,10 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Light
+PRODUCT_PACKAGES += \
+	android.hardware.light-service.lineage
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
