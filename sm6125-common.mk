@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio-impl
 
+# Boot
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-impl-qti
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
