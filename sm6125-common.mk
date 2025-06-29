@@ -215,6 +215,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/motorola \
     vendor/qcom/opensource/usb/etc
 
 # Telephony
