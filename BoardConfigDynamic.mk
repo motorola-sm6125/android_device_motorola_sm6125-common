@@ -28,6 +28,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.dynamic
 
 # Treble
 TARGET_COPY_OUT_PRODUCT := product
