@@ -90,6 +90,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include hardware/motorola/sepolicy/qti/SEPolicy.mk
 
 # Treble
 BOARD_VNDK_VERSION := current
