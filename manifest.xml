@@ -1,12 +1,3 @@
-<!--
-    Input:
-        manifest_level_4.xml
-        manifest_common.xml
-        manifest.xml
-        imgtuner_manifest.xml
-        manifest_IMoto_Fingerprint.xml
-        manifest.xml
--->
 <manifest version="2.0" type="device" target-level="4">
     <hal format="hidl">
         <name>android.hardware.audio</name>
@@ -643,7 +634,4 @@
         </interface>
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
     </hal>
-    <sepolicy>
-        <version>30.0</version>
-    </sepolicy>
 </manifest>
