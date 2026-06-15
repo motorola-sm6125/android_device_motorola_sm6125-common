@@ -1,5 +1,5 @@
-## All unpinned blobs below are from sofiap_sprout S0PRS32M.44-11-10-26
-## sofiap_ao-user 12 S0PRS32M.44-11-10-26 86991 release-keys
+## All proprietary files from this list, unless pinned and noted otherwise,
+## are from sofiap_ao (S0PRS32M.44-11-10-26).
 
 # ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
