@@ -97,7 +97,7 @@ include hardware/motorola/sepolicy/qti/SEPolicy.mk
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2022-08-01
+VENDOR_SECURITY_PATCH := 2023-04-01
 
 # Verified boot
 BOARD_AVB_ENABLE := true
