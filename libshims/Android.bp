@@ -1,0 +1,21 @@
+//
+// Copyright (C) The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library {
+    name: "libcamera_shim",
+    srcs: ["libcamera_shim.cpp"],
+    vendor: true,
+}
+
+cc_library {
+    name: "libgbp_shim",
+    shared_libs: [
+        "libgui_vendor",
+        "libutils",
+    ],
+    srcs: ["libgbp_shim.cpp"],
+    vendor: true,
+}
