@@ -40,5 +40,9 @@ TARGET_KERNEL_CONFIG := vendor/trinket-perf_defconfig vendor/mot-trinket.config
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := trinket
 
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Include the proprietary files BoardConfig.
 include vendor/motorola/sm6125-common/BoardConfigVendor.mk
