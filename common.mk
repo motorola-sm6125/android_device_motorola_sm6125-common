@@ -57,7 +57,19 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.qcom.recovery.rc
+    init.class_main.sh \
+    init.mmi.rc \
+    init.mmi.charge_only.rc \
+    init.mmi.laser.sh \
+    init.mmi.touch.sh \
+    init.oem.hw.sh \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.recovery.rc \
+    init.target.rc \
+    ueventd.qcom.rc
 
 # NFC
 PRODUCT_COPY_FILES += \
