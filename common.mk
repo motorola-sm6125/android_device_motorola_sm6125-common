@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm
