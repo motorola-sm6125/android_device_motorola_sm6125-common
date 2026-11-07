@@ -1,0 +1,25 @@
+From f3100b6839ddd4243d82d4afeb6a99a1b6f0ec24 Mon Sep 17 00:00:00 2001
+From: Vachounet <vachounet@live.fr>
+Date: Wed, 27 Jan 2021 23:29:41 +0100
+Subject: [PATCH] ImsServiceStub: force disable auto reject mode
+
+---
+ smali/org/codeaurora/ims/ImsServiceSub.smali | 5 -----
+ 1 file changed, 5 deletions(-)
+
+diff --git a/smali/org/codeaurora/ims/ImsServiceSub.smali b/smali/org/codeaurora/ims/ImsServiceSub.smali
+index b2f1faa..ffb05a9 100644
+--- a/smali/org/codeaurora/ims/ImsServiceSub.smali
++++ b/smali/org/codeaurora/ims/ImsServiceSub.smali
+@@ -8316,11 +8316,6 @@
+ 
+     iget v3, p0, Lorg/codeaurora/ims/ImsServiceSub;->mPhoneId:I
+ 
+-    .line 500
+-    invoke-static {v2, v3}, Lorg/codeaurora/ims/utils/QtiImsExtUtils;->getAutoRejectMode(Landroid/content/ContentResolver;I)I
+-
+-    move-result v3
+-
+     move v6, v3
+ 
+     goto :goto_1
