@@ -1,0 +1,22 @@
+From 9b2f6196b9d8c3740ffe2ce2d8fd90dc879cdacf Mon Sep 17 00:00:00 2001
+From: Vachounet <vachounet@live.fr>
+Date: Wed, 27 Jan 2021 23:25:34 +0100
+Subject: [PATCH] ImsConfigImpl: Remove call to syncWfcMDN()
+
+---
+ smali/org/codeaurora/ims/ImsConfigImpl.smali | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/smali/org/codeaurora/ims/ImsConfigImpl.smali b/smali/org/codeaurora/ims/ImsConfigImpl.smali
+index 2693b1b..8c07a0f 100644
+--- a/smali/org/codeaurora/ims/ImsConfigImpl.smali
++++ b/smali/org/codeaurora/ims/ImsConfigImpl.smali
+@@ -653,8 +653,6 @@
+     .param p0, "x0"    # Lorg/codeaurora/ims/ImsConfigImpl;
+ 
+     .line 53
+-    invoke-direct {p0}, Lorg/codeaurora/ims/ImsConfigImpl;->syncWfcMDN()V
+-
+     return-void
+ .end method
+ 
