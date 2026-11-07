@@ -140,9 +140,6 @@ on post-fs
     chmod 0711 /mnt/vendor/persist/rfs/mdm/mpss
     chmod 0771 /mnt/vendor/persist/rfs/mdm/mpss/mot_rfs
 
-    # Set dm-verity property for system partition
-    verity_update_state
-
     # Set capsensor calibration sysfs for MDMCTBK
     chown radio radio /sys/class/capsense/calibrate
     chmod 0660 /sys/class/capsense/calibrate
