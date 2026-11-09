@@ -41,6 +41,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('system', 'system_ext'),
     'system_ext/priv-app/ims/ims.apk': blob_fixup()
         .apktool_patch('ims-patches'),
+    'vendor/lib/libmmcamera2_pproc_modules.so': blob_fixup()
+        .binary_regex_replace(b'ro.product.manufacturer', b'ro.product.nopefacturer'),
     'vendor/lib64/libdpps.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
