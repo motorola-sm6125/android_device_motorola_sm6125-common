@@ -122,6 +122,7 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.recovery.rc \
+    init.power.rc \
     init.target.rc \
     ueventd.qcom.rc
 
