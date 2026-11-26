@@ -58,6 +58,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.frameworks.displayservice@1.0.so', 'lineage.frameworks.displayservice@1.0.so')
         .binary_regex_replace(b'7android10frameworks14displayservice', b'7lineage10frameworks14displayservice')
         .binary_regex_replace(_displayservice_unresolved, lambda m: _displayservice_ping.ljust(len(m.group(0)), b'\x00')),
+    'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     'vendor/lib/libmmcamera2_pproc_modules.so': blob_fixup()
         .binary_regex_replace(b'ro.product.manufacturer', b'ro.product.nopefacturer'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
