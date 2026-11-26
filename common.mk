@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.display.allocator-service
 
+$(call soong_config_set_bool,surfaceflinger,register_displayservice,true)
 $(call soong_config_set_bool,libui,legacy_gralloc,true)
 
 PRODUCT_COPY_FILES += \
