@@ -181,6 +181,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# Kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
