@@ -64,6 +64,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     'vendor/lib/libmmcamera2_pproc_modules.so': blob_fixup()
         .binary_regex_replace(b'ro.product.manufacturer', b'ro.product.nopefacturer'),
+    'vendor/lib/libmot_gpu_mapper.so': blob_fixup()
+        .add_needed('libgui_shim_vendor.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'vendor/lib64/sensors.moto.so': blob_fixup()
